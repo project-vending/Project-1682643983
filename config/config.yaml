@@ -1,0 +1,18 @@
+
+# Configuration file for the Real-time Data Processing Pipeline
+
+# AWS credentials for accessing the data stream
+aws_access_key: your_aws_access_key
+aws_secret_key: your_aws_secret_key
+
+# Stream configuration
+stream_name: your_stream_name
+region: your_aws_region
+
+# Data processing configuration
+processing_interval: 5 # Processing interval in seconds
+processing_limit: 1000 # Maximum number of records to process per batch
+
+# Destination configuration
+destination_bucket: your_destination_bucket
+destination_path: your_destination_path
