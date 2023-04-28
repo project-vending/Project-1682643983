@@ -1,0 +1,9 @@
+python
+# Open the processed_data.txt file in read mode
+with open("data/processed/processed_data.txt", "r") as file:
+    data = file.read()
+    print(data)  # Print the contents of the file
+
+# Open the processed_data.txt file in append mode and add some new data
+with open("data/processed/processed_data.txt", "a") as file:
+    file.write("\nNew data to append")
