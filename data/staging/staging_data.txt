@@ -1,0 +1,14 @@
+
+import os
+
+# Create the file path
+file_path = "data/staging/staging_data.txt"
+
+# Create the file if it doesn't exist
+if not os.path.exists(file_path):
+    with open(file_path, 'w') as f:
+        pass  # create the empty file
+
+# Write data to file
+with open(file_path, 'a') as f:
+    f.write("Data to be staged\n")
